@@ -1,0 +1,576 @@
+[2025-12-17T22:58:28.481+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-12-17T22:58:28.483+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-12-17T22:58:28.488+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-12-17T22:58:28.495+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-17T22:58:28.619+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2025-12-17T22:58:28.955+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/grocery_enrich_dag.py                                 0           0
+/opt/airflow/dags/grocery_ingest_dag.py                                 0           0
+/opt/airflow/dags/grocery_load_dag.py            167  0.09s             0           0
+/opt/airflow/dags/grocery_reconcile_dag.py       163  0.17s             0           0
+/opt/airflow/dags/grocery_validate_dag.py                               0           0
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0
+================================================================================
+[2025-12-17T22:58:59.665+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  2.28s           2025-12-17T22:58:31
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  1.88s           2025-12-17T22:58:30
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  1.57s           2025-12-17T22:58:32
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  1.47s           2025-12-17T22:58:32
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.76s           2025-12-17T22:58:33
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.43s           2025-12-17T22:58:33
+================================================================================
+[2025-12-17T22:59:29.955+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  2.65s           2025-12-17T22:59:03
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  2.32s           2025-12-17T22:59:03
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.74s           2025-12-17T22:59:05
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.55s           2025-12-17T22:59:04
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.54s           2025-12-17T22:59:04
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.52s           2025-12-17T22:59:04
+================================================================================
+[2025-12-17T23:00:00.824+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  5.10s           2025-12-17T22:59:38
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  4.83s           2025-12-17T22:59:38
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  1.65s           2025-12-17T22:59:41
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  1.53s           2025-12-17T22:59:41
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.95s           2025-12-17T22:59:39
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.71s           2025-12-17T22:59:39
+================================================================================
+[2025-12-17T23:00:31.109+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  4.79s           2025-12-17T23:00:13
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  4.21s           2025-12-17T23:00:13
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  1.22s           2025-12-17T23:00:15
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  1.13s           2025-12-17T23:00:15
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.58s           2025-12-17T23:00:14
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.41s           2025-12-17T23:00:14
+================================================================================
+[2025-12-17T23:01:01.134+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.34s           2025-12-17T23:00:45
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.32s           2025-12-17T23:00:45
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.21s           2025-12-17T23:00:45
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.17s           2025-12-17T23:00:46
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.15s           2025-12-17T23:00:45
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.12s           2025-12-17T23:00:46
+================================================================================
+[2025-12-17T23:01:31.482+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.74s           2025-12-17T23:01:17
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.72s           2025-12-17T23:01:17
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.69s           2025-12-17T23:01:18
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.65s           2025-12-17T23:01:18
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.53s           2025-12-17T23:01:17
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.37s           2025-12-17T23:01:18
+================================================================================
+[2025-12-17T23:01:46.373+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-12-17T23:03:16.352+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-12-17T23:03:16.355+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-12-17T23:03:16.364+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-12-17T23:03:16.371+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-17T23:03:16.722+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2025-12-17T23:03:18.078+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/grocery_enrich_dag.py                                 0           0
+/opt/airflow/dags/grocery_ingest_dag.py                                 0           0
+/opt/airflow/dags/grocery_load_dag.py            167  0.35s             0           0
+/opt/airflow/dags/grocery_reconcile_dag.py       164  0.63s             0           0
+/opt/airflow/dags/grocery_validate_dag.py                               0           0
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0
+================================================================================
+[2025-12-17T23:03:48.625+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  16.75s          2025-12-17T23:03:34
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  16.35s          2025-12-17T23:03:34
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  3.82s           2025-12-17T23:03:37
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  3.51s           2025-12-17T23:03:37
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  1.60s           2025-12-17T23:03:39
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  1.43s           2025-12-17T23:03:39
+================================================================================
+[2025-12-17T23:04:18.790+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  3.28s           2025-12-17T23:04:07
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  2.95s           2025-12-17T23:04:11
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  2.80s           2025-12-17T23:04:11
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  2.53s           2025-12-17T23:04:07
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  1.25s           2025-12-17T23:04:12
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.88s           2025-12-17T23:04:12
+================================================================================
+[2025-12-17T23:04:48.875+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  4.46s           2025-12-17T23:04:42
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  4.24s           2025-12-17T23:04:42
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.70s           2025-12-17T23:04:43
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.61s           2025-12-17T23:04:44
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.51s           2025-12-17T23:04:44
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.46s           2025-12-17T23:04:44
+================================================================================
+[2025-12-17T23:05:19.336+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  2.04s           2025-12-17T23:05:15
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  1.94s           2025-12-17T23:05:15
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.58s           2025-12-17T23:05:16
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.52s           2025-12-17T23:05:15
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.43s           2025-12-17T23:05:15
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.33s           2025-12-17T23:05:16
+================================================================================
+[2025-12-17T23:05:49.474+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.84s           2025-12-17T23:05:46
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.79s           2025-12-17T23:05:46
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.63s           2025-12-17T23:05:47
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.57s           2025-12-17T23:05:47
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.41s           2025-12-17T23:05:46
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.36s           2025-12-17T23:05:47
+================================================================================
+[2025-12-17T23:06:19.555+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.77s           2025-12-17T23:06:17
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.72s           2025-12-17T23:06:17
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.51s           2025-12-17T23:06:18
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.41s           2025-12-17T23:06:18
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.30s           2025-12-17T23:06:18
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.16s           2025-12-17T23:06:18
+================================================================================
+[2025-12-17T23:06:49.617+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  1.21s           2025-12-17T23:06:49
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  1.18s           2025-12-17T23:06:49
+/opt/airflow/dags/grocery_enrich_dag.py          354  0.02s             1           0  0.51s           2025-12-17T23:06:18
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.41s           2025-12-17T23:06:18
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.30s           2025-12-17T23:06:18
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.16s           2025-12-17T23:06:18
+================================================================================
+[2025-12-17T23:07:22.070+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  1.74s           2025-12-17T23:06:52
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  1.21s           2025-12-17T23:06:51
+/opt/airflow/dags/grocery_reconcile_dag.py       374  1.09s             1           0  1.21s           2025-12-17T23:06:49
+/opt/airflow/dags/grocery_load_dag.py            377  0.12s             1           0  1.18s           2025-12-17T23:06:49
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  1.15s           2025-12-17T23:06:50
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.98s           2025-12-17T23:06:52
+================================================================================
+[2025-12-17T23:07:53.276+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  5.21s           2025-12-17T23:07:26
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  3.96s           2025-12-17T23:07:25
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  2.24s           2025-12-17T23:07:28
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  1.83s           2025-12-17T23:07:28
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  1.38s           2025-12-17T23:07:29
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.87s           2025-12-17T23:07:29
+================================================================================
+[2025-12-17T23:08:17.285+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-17T23:08:17.335+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2025-12-17T23:08:23.543+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  1.81s           2025-12-17T23:07:58
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  1.72s           2025-12-17T23:07:58
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.38s           2025-12-17T23:07:58
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.31s           2025-12-17T23:08:00
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.25s           2025-12-17T23:07:59
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.23s           2025-12-17T23:08:00
+================================================================================
+[2025-12-17T23:08:54.369+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.26s           2025-12-17T23:08:28
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.22s           2025-12-17T23:08:28
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.18s           2025-12-17T23:08:31
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.16s           2025-12-17T23:08:30
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.14s           2025-12-17T23:08:29
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.11s           2025-12-17T23:08:31
+================================================================================
+[2025-12-17T23:09:25.170+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.21s           2025-12-17T23:08:59
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.20s           2025-12-17T23:08:59
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.17s           2025-12-17T23:09:01
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.16s           2025-12-17T23:09:00
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.15s           2025-12-17T23:08:59
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.11s           2025-12-17T23:09:01
+================================================================================
+[2025-12-17T23:09:55.913+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.17s           2025-12-17T23:09:30
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.17s           2025-12-17T23:09:30
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.17s           2025-12-17T23:09:32
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.16s           2025-12-17T23:09:31
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.14s           2025-12-17T23:09:30
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.10s           2025-12-17T23:09:32
+================================================================================
+[2025-12-17T23:10:26.637+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.22s           2025-12-17T23:10:01
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.21s           2025-12-17T23:10:01
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.16s           2025-12-17T23:10:03
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.16s           2025-12-17T23:10:02
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.14s           2025-12-17T23:10:01
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.11s           2025-12-17T23:10:03
+================================================================================
+[2025-12-17T23:10:57.438+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.19s           2025-12-17T23:10:34
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.18s           2025-12-17T23:10:31
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.18s           2025-12-17T23:10:31
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.16s           2025-12-17T23:10:33
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.14s           2025-12-17T23:10:32
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.12s           2025-12-17T23:10:34
+================================================================================
+[2025-12-17T23:11:28.257+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.20s           2025-12-17T23:11:02
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.19s           2025-12-17T23:11:05
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.19s           2025-12-17T23:11:02
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.16s           2025-12-17T23:11:03
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.14s           2025-12-17T23:11:02
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.13s           2025-12-17T23:11:05
+================================================================================
+[2025-12-17T23:11:59.017+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.21s           2025-12-17T23:11:33
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.20s           2025-12-17T23:11:35
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.18s           2025-12-17T23:11:33
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.16s           2025-12-17T23:11:34
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.14s           2025-12-17T23:11:33
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.13s           2025-12-17T23:11:35
+================================================================================
+[2025-12-17T23:12:29.861+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.22s           2025-12-17T23:12:04
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.22s           2025-12-17T23:12:04
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.18s           2025-12-17T23:12:06
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.16s           2025-12-17T23:12:05
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.14s           2025-12-17T23:12:04
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.11s           2025-12-17T23:12:06
+================================================================================
+[2025-12-17T23:12:59.912+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.47s           2025-12-17T23:12:35
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.45s           2025-12-17T23:12:35
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.17s           2025-12-17T23:12:36
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.16s           2025-12-17T23:12:35
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.15s           2025-12-17T23:12:35
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.11s           2025-12-17T23:12:36
+================================================================================
+[2025-12-17T23:13:17.618+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-17T23:13:17.661+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2025-12-17T23:13:30.840+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.28s           2025-12-17T23:13:06
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.27s           2025-12-17T23:13:06
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.17s           2025-12-17T23:13:07
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.16s           2025-12-17T23:13:06
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.14s           2025-12-17T23:13:06
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.11s           2025-12-17T23:13:07
+================================================================================
+[2025-12-17T23:14:00.957+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.35s           2025-12-17T23:13:37
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.31s           2025-12-17T23:13:37
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.17s           2025-12-17T23:13:37
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.16s           2025-12-17T23:13:37
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.15s           2025-12-17T23:13:37
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.11s           2025-12-17T23:13:37
+================================================================================
+[2025-12-17T23:14:31.023+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.34s           2025-12-17T23:14:08
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.30s           2025-12-17T23:14:08
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.23s           2025-12-17T23:14:08
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.21s           2025-12-17T23:14:08
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.20s           2025-12-17T23:14:08
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.13s           2025-12-17T23:14:08
+================================================================================
+[2025-12-17T23:15:01.063+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.35s           2025-12-17T23:14:39
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.31s           2025-12-17T23:14:39
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.24s           2025-12-17T23:14:39
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.23s           2025-12-17T23:14:39
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.19s           2025-12-17T23:14:39
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.12s           2025-12-17T23:14:39
+================================================================================
+[2025-12-17T23:15:32.025+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.28s           2025-12-17T23:15:10
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.25s           2025-12-17T23:15:10
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.20s           2025-12-17T23:15:10
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.18s           2025-12-17T23:15:10
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.15s           2025-12-17T23:15:10
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.10s           2025-12-17T23:15:10
+================================================================================
+[2025-12-17T23:16:03.034+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.32s           2025-12-17T23:15:41
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.29s           2025-12-17T23:15:41
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.21s           2025-12-17T23:15:41
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.19s           2025-12-17T23:15:41
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.14s           2025-12-17T23:15:41
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.11s           2025-12-17T23:15:41
+================================================================================
+[2025-12-17T23:16:33.087+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.30s           2025-12-17T23:16:12
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.25s           2025-12-17T23:16:12
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.21s           2025-12-17T23:16:12
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.19s           2025-12-17T23:16:12
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.14s           2025-12-17T23:16:12
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.09s           2025-12-17T23:16:12
+================================================================================
+[2025-12-17T23:17:03.158+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.33s           2025-12-17T23:16:43
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.31s           2025-12-17T23:16:43
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.31s           2025-12-17T23:16:43
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.30s           2025-12-17T23:16:43
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.15s           2025-12-17T23:16:43
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.09s           2025-12-17T23:16:44
+================================================================================
+[2025-12-17T23:17:33.201+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.37s           2025-12-17T23:17:14
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.34s           2025-12-17T23:17:14
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.18s           2025-12-17T23:17:15
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.18s           2025-12-17T23:17:15
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.15s           2025-12-17T23:17:14
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.10s           2025-12-17T23:17:15
+================================================================================
+[2025-12-17T23:18:03.332+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.91s           2025-12-17T23:17:46
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.89s           2025-12-17T23:17:46
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.44s           2025-12-17T23:17:46
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.42s           2025-12-17T23:17:46
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.18s           2025-12-17T23:17:47
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.17s           2025-12-17T23:17:46
+================================================================================
+[2025-12-17T23:18:18.240+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-17T23:18:18.275+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2025-12-17T23:18:33.445+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.36s           2025-12-17T23:18:16
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.35s           2025-12-17T23:18:16
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.23s           2025-12-17T23:18:17
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.22s           2025-12-17T23:18:17
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.16s           2025-12-17T23:18:16
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.10s           2025-12-17T23:18:17
+================================================================================
+[2025-12-17T23:19:04.080+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.53s           2025-12-17T23:18:48
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.37s           2025-12-17T23:18:48
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.36s           2025-12-17T23:18:47
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.35s           2025-12-17T23:18:48
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.34s           2025-12-17T23:18:47
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.19s           2025-12-17T23:18:49
+================================================================================
+[2025-12-17T23:19:35.015+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.33s           2025-12-17T23:19:18
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.32s           2025-12-17T23:19:18
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.25s           2025-12-17T23:19:19
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.25s           2025-12-17T23:19:19
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.17s           2025-12-17T23:19:18
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.10s           2025-12-17T23:19:19
+================================================================================
+[2025-12-17T23:20:05.900+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.34s           2025-12-17T23:19:49
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.31s           2025-12-17T23:19:49
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.21s           2025-12-17T23:19:50
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.19s           2025-12-17T23:19:50
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.16s           2025-12-17T23:19:49
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.11s           2025-12-17T23:19:50
+================================================================================
+[2025-12-17T23:20:36.210+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.49s           2025-12-17T23:20:20
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.43s           2025-12-17T23:20:20
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.23s           2025-12-17T23:20:21
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.23s           2025-12-17T23:20:21
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.21s           2025-12-17T23:20:20
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.13s           2025-12-17T23:20:21
+================================================================================
+[2025-12-17T23:21:06.281+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/grocery_reconcile_dag.py                              1           0  0.31s           2025-12-17T23:20:51
+/opt/airflow/dags/grocery_load_dag.py                                   1           0  0.30s           2025-12-17T23:20:51
+/opt/airflow/dags/grocery_ingest_dag.py                                 1           0  0.20s           2025-12-17T23:20:52
+/opt/airflow/dags/grocery_validate_dag.py                               1           0  0.19s           2025-12-17T23:20:52
+/opt/airflow/dags/grocery_enrich_dag.py                                 1           0  0.15s           2025-12-17T23:20:51
+/opt/airflow/dags/grocery_lib/notify_ardoa.py                           0           0  0.10s           2025-12-17T23:20:52
+================================================================================

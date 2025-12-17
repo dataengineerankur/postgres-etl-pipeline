@@ -1,0 +1,108 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow -d grocery"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+      - ../sql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+  mock_pos_api:
+    build:
+      context: ..
+      dockerfile: mock_pos_api/Dockerfile
+    ports:
+      - "8199:8099"
+
+  airflow-init:
+    image: grocery-airflow:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "True"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./data:/opt/airflow/data
+    entrypoint: /bin/bash
+    command: -c "airflow db init && airflow db migrate && airflow users create --username airflow --password airflow --firstname airflow --lastname airflow --role Admin --email airflow@example.com || true"
+
+  airflow-webserver:
+    image: grocery-airflow:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+      mock_pos_api:
+        condition: service_started
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth"
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "True"
+      # ARDOA integration (host default). Override if needed.
+      ARDOA_ENDPOINT: "http://host.docker.internal:8088/events/ingest"
+      # Source + DB endpoints
+      MOCK_POS_API_BASE_URL: "http://mock_pos_api:8099"
+      GROCERY_PG_DSN: "postgresql+psycopg2://airflow:airflow@postgres:5432/airflow"
+      # For log/artifact URIs in failure events (Airflow container paths)
+      ARDOA_LOGS_BASE: "/opt/airflow/logs"
+      ARDOA_DATA_BASE: "/opt/airflow/data"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./data:/opt/airflow/data
+    ports:
+      - "8090:8080"
+    command: webserver
+
+  airflow-scheduler:
+    image: grocery-airflow:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+      mock_pos_api:
+        condition: service_started
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "True"
+      ARDOA_ENDPOINT: "http://host.docker.internal:8088/events/ingest"
+      MOCK_POS_API_BASE_URL: "http://mock_pos_api:8099"
+      GROCERY_PG_DSN: "postgresql+psycopg2://airflow:airflow@postgres:5432/airflow"
+      ARDOA_LOGS_BASE: "/opt/airflow/logs"
+      ARDOA_DATA_BASE: "/opt/airflow/data"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./data:/opt/airflow/data
+    command: scheduler
+
+

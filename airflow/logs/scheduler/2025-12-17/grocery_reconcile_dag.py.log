@@ -1,0 +1,291 @@
+[2025-12-17T22:58:28.845+0000] {processor.py:161} INFO - Started process (PID=163) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T22:58:28.851+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T22:58:28.864+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:28.861+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T22:58:29.985+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T22:58:30.486+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.484+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:grocery_reconcile_dag
+[2025-12-17T22:58:30.509+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.507+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:grocery_reconcile_dag
+[2025-12-17T22:58:30.533+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.532+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:grocery_reconcile_dag
+[2025-12-17T22:58:30.536+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.535+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T22:58:30.574+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.574+0000] {dag.py:3111} INFO - Creating ORM DAG for grocery_reconcile_dag
+[2025-12-17T22:58:30.576+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.576+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T22:58:30.666+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 1.855 seconds
+[2025-12-17T22:59:01.301+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T22:59:01.311+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T22:59:01.339+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:01.334+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T22:59:03.018+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T22:59:03.269+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:03.268+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T22:59:03.354+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:03.352+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T22:59:03.453+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 2.203 seconds
+[2025-12-17T22:59:34.456+0000] {processor.py:161} INFO - Started process (PID=224) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T22:59:34.483+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T22:59:34.535+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:34.519+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T22:59:38.380+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T22:59:38.630+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:38.630+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T22:59:38.741+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:38.741+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T22:59:38.898+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 4.679 seconds
+[2025-12-17T23:00:09.647+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:00:09.658+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:00:09.683+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:09.678+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:00:13.457+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:00:13.595+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:13.595+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:00:13.642+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:13.642+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:00:13.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 4.189 seconds
+[2025-12-17T23:00:45.251+0000] {processor.py:161} INFO - Started process (PID=284) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:00:45.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:00:45.256+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:45.256+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:00:45.384+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:00:45.453+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:45.452+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:00:45.491+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:45.490+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:00:45.538+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.294 seconds
+[2025-12-17T23:01:16.407+0000] {processor.py:161} INFO - Started process (PID=314) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:01:16.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:01:16.427+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:01:16.426+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:01:16.725+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:01:16.864+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:01:16.864+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:01:16.930+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:01:16.930+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:01:17.029+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.651 seconds
+[2025-12-17T23:03:17.646+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:03:17.659+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:03:17.685+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:03:17.676+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:03:19.351+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:03:33.640+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:03:33.637+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:03:33.763+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:03:33.763+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:03:33.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 16.373 seconds
+[2025-12-17T23:04:05.058+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:04:05.066+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:04:05.084+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:05.083+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:04:06.788+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:04:07.212+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:07.210+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:04:07.331+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:07.330+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:04:07.429+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 2.380 seconds
+[2025-12-17T23:04:38.706+0000] {processor.py:161} INFO - Started process (PID=224) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:04:38.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:04:38.747+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:38.744+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:04:42.122+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:04:42.528+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:42.528+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:04:42.622+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:42.622+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:04:42.716+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 4.096 seconds
+[2025-12-17T23:05:13.463+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:05:13.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:05:13.497+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:13.489+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:05:14.930+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:05:15.150+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:15.150+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:05:15.212+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:15.211+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:05:15.267+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 1.856 seconds
+[2025-12-17T23:05:45.664+0000] {processor.py:161} INFO - Started process (PID=284) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:05:45.675+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:05:45.693+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:45.690+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:05:46.249+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:05:46.315+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:46.315+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:05:46.339+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:46.339+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:05:46.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.764 seconds
+[2025-12-17T23:06:16.823+0000] {processor.py:161} INFO - Started process (PID=314) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:06:16.829+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:06:16.836+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:16.835+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:06:17.365+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:06:17.430+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:17.430+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:06:17.454+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:17.454+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:06:17.493+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.688 seconds
+[2025-12-17T23:06:48.504+0000] {processor.py:161} INFO - Started process (PID=344) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:06:48.512+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:06:48.527+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:48.526+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:06:48.854+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:06:49.170+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:49.170+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:06:49.306+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:49.306+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:06:49.442+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.984 seconds
+[2025-12-17T23:07:22.553+0000] {processor.py:161} INFO - Started process (PID=374) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:07:22.643+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:07:22.786+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:22.763+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:07:24.726+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:07:25.366+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:25.362+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:07:25.492+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:25.492+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:07:25.636+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 3.682 seconds
+[2025-12-17T23:07:56.876+0000] {processor.py:161} INFO - Started process (PID=404) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:07:56.880+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:07:56.926+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:56.922+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:07:57.818+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:07:58.182+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:58.181+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:07:58.259+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:58.258+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:07:58.336+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 1.536 seconds
+[2025-12-17T23:08:28.660+0000] {processor.py:161} INFO - Started process (PID=434) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:08:28.663+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:08:28.667+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:28.667+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:08:28.754+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:08:28.796+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:28.796+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:08:28.820+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:28.820+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:08:28.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.198 seconds
+[2025-12-17T23:08:59.456+0000] {processor.py:161} INFO - Started process (PID=464) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:08:59.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:08:59.460+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:59.459+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:08:59.518+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:08:59.568+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:59.568+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:08:59.594+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:59.594+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:08:59.623+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.172 seconds
+[2025-12-17T23:09:30.235+0000] {processor.py:161} INFO - Started process (PID=494) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:09:30.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:09:30.237+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:09:30.237+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:09:30.296+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:09:30.332+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:09:30.331+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:09:30.346+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:09:30.346+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:09:30.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.144 seconds
+[2025-12-17T23:10:01.007+0000] {processor.py:161} INFO - Started process (PID=524) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:10:01.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:10:01.013+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:01.013+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:10:01.093+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:10:01.135+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:01.134+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:10:01.156+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:01.156+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:10:01.182+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.183 seconds
+[2025-12-17T23:10:31.699+0000] {processor.py:161} INFO - Started process (PID=554) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:10:31.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:10:31.703+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:31.703+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:10:31.766+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:10:31.805+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:31.804+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:10:31.824+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:31.824+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:10:31.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.155 seconds
+[2025-12-17T23:11:02.536+0000] {processor.py:161} INFO - Started process (PID=584) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:11:02.538+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:11:02.540+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:02.540+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:11:02.612+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:11:02.651+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:02.651+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:11:02.668+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:02.668+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:11:02.696+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.167 seconds
+[2025-12-17T23:11:33.351+0000] {processor.py:161} INFO - Started process (PID=614) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:11:33.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:11:33.357+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:33.356+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:11:33.421+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:11:33.459+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:33.459+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:11:33.479+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:33.479+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:11:33.509+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.165 seconds
+[2025-12-17T23:12:04.101+0000] {processor.py:161} INFO - Started process (PID=644) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:12:04.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:12:04.105+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:04.105+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:12:04.187+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:12:04.233+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:04.233+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:12:04.254+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:04.253+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:12:04.286+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.192 seconds
+[2025-12-17T23:12:34.992+0000] {processor.py:161} INFO - Started process (PID=674) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:12:34.994+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:12:34.998+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:34.998+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:12:35.102+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:12:35.334+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:35.334+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:12:35.362+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:35.361+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:12:35.395+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.419 seconds
+[2025-12-17T23:13:06.009+0000] {processor.py:161} INFO - Started process (PID=704) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:13:06.011+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:13:06.015+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:06.014+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:13:06.129+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:13:06.181+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:06.181+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:13:06.204+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:06.204+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:13:06.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.239 seconds
+[2025-12-17T23:13:37.011+0000] {processor.py:161} INFO - Started process (PID=734) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:13:37.013+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:13:37.017+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:37.016+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:13:37.127+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:13:37.186+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:37.186+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:13:37.211+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:37.211+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:13:37.262+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.265 seconds
+[2025-12-17T23:14:08.065+0000] {processor.py:161} INFO - Started process (PID=764) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:14:08.068+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:14:08.075+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:08.074+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:14:08.209+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:14:08.269+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:08.268+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:14:08.299+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:08.298+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:14:08.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.283 seconds
+[2025-12-17T23:14:39.148+0000] {processor.py:161} INFO - Started process (PID=794) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:14:39.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:14:39.156+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:39.156+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:14:39.283+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:14:39.348+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:39.347+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:14:39.379+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:39.378+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:14:39.426+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.293 seconds
+[2025-12-17T23:15:10.206+0000] {processor.py:161} INFO - Started process (PID=824) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:15:10.210+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:15:10.213+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:10.213+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:15:10.316+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:15:10.364+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:10.364+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:15:10.387+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:10.387+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:15:10.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.228 seconds
+[2025-12-17T23:15:41.169+0000] {processor.py:161} INFO - Started process (PID=854) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:15:41.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:15:41.176+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:41.175+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:15:41.299+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:15:41.368+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:41.367+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:15:41.391+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:41.391+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:15:41.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.267 seconds
+[2025-12-17T23:16:12.175+0000] {processor.py:161} INFO - Started process (PID=884) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:16:12.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:16:12.182+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:12.182+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:16:12.296+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:16:12.363+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:12.362+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:16:12.385+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:12.384+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:16:12.415+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.250 seconds
+[2025-12-17T23:16:43.245+0000] {processor.py:161} INFO - Started process (PID=914) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:16:43.248+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:16:43.252+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:43.251+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:16:43.386+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:16:43.449+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:43.449+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:16:43.473+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:43.473+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:16:43.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.277 seconds
+[2025-12-17T23:17:14.354+0000] {processor.py:161} INFO - Started process (PID=944) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:17:14.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:17:14.363+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:14.363+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:17:14.502+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:17:14.577+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:14.577+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:17:14.604+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:14.604+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:17:14.640+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.309 seconds
+[2025-12-17T23:17:45.518+0000] {processor.py:161} INFO - Started process (PID=974) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:17:45.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:17:45.533+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:45.532+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:17:46.123+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:17:46.250+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:46.250+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:17:46.285+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:46.284+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:17:46.322+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.830 seconds
+[2025-12-17T23:18:16.514+0000] {processor.py:161} INFO - Started process (PID=1004) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:18:16.517+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:18:16.523+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:16.522+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:18:16.691+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:18:16.755+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:16.755+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:18:16.781+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:16.781+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:18:16.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.315 seconds
+[2025-12-17T23:18:47.652+0000] {processor.py:161} INFO - Started process (PID=1034) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:18:47.654+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:18:47.658+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:47.658+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:18:47.821+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:18:47.888+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:47.888+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:18:47.916+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:47.915+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:18:47.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.313 seconds
+[2025-12-17T23:19:18.268+0000] {processor.py:161} INFO - Started process (PID=1064) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:19:18.272+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:19:18.278+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:18.278+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:19:18.416+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:19:18.475+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:18.475+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:19:18.504+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:18.504+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:19:18.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.287 seconds
+[2025-12-17T23:19:49.237+0000] {processor.py:161} INFO - Started process (PID=1094) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:19:49.240+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:19:49.244+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:49.244+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:19:49.398+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:19:49.455+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:49.455+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:19:49.478+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:49.477+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:19:49.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.289 seconds
+[2025-12-17T23:20:20.201+0000] {processor.py:161} INFO - Started process (PID=1124) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:20:20.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:20:20.215+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:20.214+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:20:20.418+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:20:20.500+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:20.500+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:20:20.534+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:20.534+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:20:20.580+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.396 seconds
+[2025-12-17T23:20:51.444+0000] {processor.py:161} INFO - Started process (PID=1154) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:20:51.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:20:51.451+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:51.450+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:20:51.585+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:20:51.644+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:51.644+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:20:51.667+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:51.667+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:20:51.696+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.262 seconds
+[2025-12-17T23:21:22.429+0000] {processor.py:161} INFO - Started process (PID=1184) to work on /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:21:22.434+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_reconcile_dag.py for tasks to queue
+[2025-12-17T23:21:22.437+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:21:22.437+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:21:22.584+0000] {processor.py:840} INFO - DAG(s) 'grocery_reconcile_dag' retrieved from /opt/airflow/dags/grocery_reconcile_dag.py
+[2025-12-17T23:21:22.635+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:21:22.635+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:21:22.662+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:21:22.662+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_reconcile_dag to None, run_after=None
+[2025-12-17T23:21:22.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_reconcile_dag.py took 0.275 seconds

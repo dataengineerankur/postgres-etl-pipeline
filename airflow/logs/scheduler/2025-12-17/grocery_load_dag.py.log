@@ -1,0 +1,291 @@
+[2025-12-17T22:58:28.904+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T22:58:28.909+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T22:58:28.917+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:28.916+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T22:58:29.986+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T22:58:30.487+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.485+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:grocery_load_dag
+[2025-12-17T22:58:30.509+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.509+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:grocery_load_dag
+[2025-12-17T22:58:30.530+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.530+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:grocery_load_dag
+[2025-12-17T22:58:30.533+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.533+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T22:58:30.576+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.576+0000] {dag.py:3111} INFO - Creating ORM DAG for grocery_load_dag
+[2025-12-17T22:58:30.579+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:58:30.579+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T22:58:30.674+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 1.781 seconds
+[2025-12-17T22:59:01.300+0000] {processor.py:161} INFO - Started process (PID=194) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T22:59:01.311+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T22:59:01.340+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:01.334+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T22:59:03.018+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T22:59:03.270+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:03.270+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T22:59:03.343+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:03.342+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T22:59:03.453+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 2.236 seconds
+[2025-12-17T22:59:34.460+0000] {processor.py:161} INFO - Started process (PID=226) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T22:59:34.484+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T22:59:34.535+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:34.518+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T22:59:38.382+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T22:59:38.630+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:38.629+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T22:59:38.737+0000] {logging_mixin.py:188} INFO - [2025-12-17T22:59:38.734+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T22:59:38.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 4.696 seconds
+[2025-12-17T23:00:09.672+0000] {processor.py:161} INFO - Started process (PID=257) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:00:09.682+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:00:09.714+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:09.708+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:00:13.457+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:00:13.604+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:13.603+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:00:13.647+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:13.646+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:00:13.706+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 4.083 seconds
+[2025-12-17T23:00:45.260+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:00:45.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:00:45.265+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:45.265+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:00:45.385+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:00:45.451+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:45.451+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:00:45.489+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:00:45.488+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:00:45.538+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.284 seconds
+[2025-12-17T23:01:16.444+0000] {processor.py:161} INFO - Started process (PID=317) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:01:16.454+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:01:16.462+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:01:16.461+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:01:16.725+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:01:16.860+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:01:16.859+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:01:16.930+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:01:16.930+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:01:17.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.610 seconds
+[2025-12-17T23:03:17.884+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:03:17.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:03:17.951+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:03:17.949+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:03:32.471+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:03:33.632+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:03:33.626+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:03:33.738+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:03:33.738+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:03:33.948+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 16.131 seconds
+[2025-12-17T23:04:04.773+0000] {processor.py:161} INFO - Started process (PID=194) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:04:04.803+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:04:04.859+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:04.852+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:04:06.788+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:04:07.222+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:07.221+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:04:07.330+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:07.329+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:04:07.428+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 2.840 seconds
+[2025-12-17T23:04:38.705+0000] {processor.py:161} INFO - Started process (PID=225) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:04:38.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:04:38.747+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:38.744+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:04:42.123+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:04:42.528+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:42.527+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:04:42.617+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:04:42.616+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:04:42.721+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 4.101 seconds
+[2025-12-17T23:05:13.463+0000] {processor.py:161} INFO - Started process (PID=255) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:05:13.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:05:13.497+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:13.489+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:05:14.930+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:05:15.147+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:15.147+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:05:15.214+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:15.213+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:05:15.267+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 1.855 seconds
+[2025-12-17T23:05:45.664+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:05:45.675+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:05:45.693+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:45.690+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:05:46.247+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:05:46.316+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:46.315+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:05:46.340+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:05:46.340+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:05:46.380+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.749 seconds
+[2025-12-17T23:06:16.823+0000] {processor.py:161} INFO - Started process (PID=317) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:06:16.829+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:06:16.836+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:16.835+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:06:17.365+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:06:17.430+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:17.430+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:06:17.454+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:17.454+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:06:17.491+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.680 seconds
+[2025-12-17T23:06:48.513+0000] {processor.py:161} INFO - Started process (PID=347) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:06:48.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:06:48.527+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:48.526+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:06:48.898+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:06:49.170+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:49.169+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:06:49.306+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:06:49.306+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:06:49.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 1.008 seconds
+[2025-12-17T23:07:22.654+0000] {processor.py:161} INFO - Started process (PID=377) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:07:22.678+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:07:22.784+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:22.781+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:07:24.726+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:07:25.366+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:25.362+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:07:25.492+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:25.492+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:07:25.631+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 3.413 seconds
+[2025-12-17T23:07:56.922+0000] {processor.py:161} INFO - Started process (PID=407) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:07:56.932+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:07:56.948+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:56.948+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:07:57.819+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:07:58.181+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:58.180+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:07:58.259+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:07:58.259+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:07:58.337+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 1.468 seconds
+[2025-12-17T23:08:28.660+0000] {processor.py:161} INFO - Started process (PID=437) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:08:28.663+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:08:28.667+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:28.666+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:08:28.754+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:08:28.796+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:28.796+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:08:28.820+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:28.820+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:08:28.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.198 seconds
+[2025-12-17T23:08:59.462+0000] {processor.py:161} INFO - Started process (PID=467) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:08:59.464+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:08:59.466+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:59.466+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:08:59.524+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:08:59.567+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:59.567+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:08:59.593+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:08:59.593+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:08:59.623+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.165 seconds
+[2025-12-17T23:09:30.243+0000] {processor.py:161} INFO - Started process (PID=497) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:09:30.247+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:09:30.249+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:09:30.249+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:09:30.311+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:09:30.344+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:09:30.344+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:09:30.360+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:09:30.359+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:09:30.382+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.146 seconds
+[2025-12-17T23:10:01.009+0000] {processor.py:161} INFO - Started process (PID=527) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:10:01.011+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:10:01.014+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:01.013+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:10:01.093+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:10:01.135+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:01.135+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:10:01.156+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:01.155+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:10:01.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.180 seconds
+[2025-12-17T23:10:31.707+0000] {processor.py:161} INFO - Started process (PID=557) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:10:31.709+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:10:31.712+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:31.711+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:10:31.770+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:10:31.808+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:31.808+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:10:31.825+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:10:31.825+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:10:31.856+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.155 seconds
+[2025-12-17T23:11:02.538+0000] {processor.py:161} INFO - Started process (PID=587) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:11:02.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:11:02.541+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:02.541+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:11:02.612+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:11:02.653+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:02.653+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:11:02.671+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:02.671+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:11:02.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.163 seconds
+[2025-12-17T23:11:33.358+0000] {processor.py:161} INFO - Started process (PID=617) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:11:33.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:11:33.361+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:33.361+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:11:33.421+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:11:33.459+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:33.459+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:11:33.479+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:11:33.478+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:11:33.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.155 seconds
+[2025-12-17T23:12:04.106+0000] {processor.py:161} INFO - Started process (PID=647) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:12:04.107+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:12:04.109+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:04.109+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:12:04.188+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:12:04.233+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:04.233+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:12:04.254+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:04.253+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:12:04.288+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.187 seconds
+[2025-12-17T23:12:34.993+0000] {processor.py:161} INFO - Started process (PID=677) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:12:34.995+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:12:34.998+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:34.998+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:12:35.102+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:12:35.334+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:35.334+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:12:35.361+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:12:35.361+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:12:35.394+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.410 seconds
+[2025-12-17T23:13:06.009+0000] {processor.py:161} INFO - Started process (PID=706) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:13:06.011+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:13:06.015+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:06.014+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:13:06.129+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:13:06.181+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:06.180+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:13:06.207+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:06.206+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:13:06.243+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.244 seconds
+[2025-12-17T23:13:37.011+0000] {processor.py:161} INFO - Started process (PID=737) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:13:37.014+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:13:37.017+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:37.016+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:13:37.127+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:13:37.186+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:37.186+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:13:37.211+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:13:37.211+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:13:37.262+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.258 seconds
+[2025-12-17T23:14:08.065+0000] {processor.py:161} INFO - Started process (PID=767) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:14:08.068+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:14:08.075+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:08.074+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:14:08.209+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:14:08.269+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:08.268+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:14:08.299+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:08.298+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:14:08.336+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.275 seconds
+[2025-12-17T23:14:39.148+0000] {processor.py:161} INFO - Started process (PID=797) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:14:39.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:14:39.156+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:39.156+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:14:39.283+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:14:39.347+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:39.347+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:14:39.379+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:14:39.378+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:14:39.419+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.277 seconds
+[2025-12-17T23:15:10.206+0000] {processor.py:161} INFO - Started process (PID=827) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:15:10.210+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:15:10.213+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:10.213+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:15:10.316+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:15:10.364+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:10.364+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:15:10.387+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:10.387+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:15:10.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.225 seconds
+[2025-12-17T23:15:41.169+0000] {processor.py:161} INFO - Started process (PID=857) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:15:41.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:15:41.176+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:41.175+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:15:41.299+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:15:41.368+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:41.368+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:15:41.392+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:15:41.391+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:15:41.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.263 seconds
+[2025-12-17T23:16:12.191+0000] {processor.py:161} INFO - Started process (PID=887) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:16:12.193+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:16:12.195+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:12.194+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:16:12.296+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:16:12.363+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:12.362+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:16:12.384+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:12.384+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:16:12.414+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.228 seconds
+[2025-12-17T23:16:43.245+0000] {processor.py:161} INFO - Started process (PID=917) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:16:43.248+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:16:43.252+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:43.251+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:16:43.386+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:16:43.449+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:43.449+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:16:43.473+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:16:43.473+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:16:43.504+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.265 seconds
+[2025-12-17T23:17:14.354+0000] {processor.py:161} INFO - Started process (PID=947) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:17:14.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:17:14.363+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:14.363+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:17:14.516+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:17:14.577+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:14.577+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:17:14.604+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:14.604+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:17:14.640+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.304 seconds
+[2025-12-17T23:17:45.518+0000] {processor.py:161} INFO - Started process (PID=976) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:17:45.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:17:45.533+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:45.532+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:17:46.124+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:17:46.250+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:46.250+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:17:46.285+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:17:46.284+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:17:46.321+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.829 seconds
+[2025-12-17T23:18:16.518+0000] {processor.py:161} INFO - Started process (PID=1007) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:18:16.520+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:18:16.523+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:16.523+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:18:16.691+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:18:16.755+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:16.754+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:18:16.781+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:16.781+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:18:16.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.307 seconds
+[2025-12-17T23:18:47.652+0000] {processor.py:161} INFO - Started process (PID=1037) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:18:47.654+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:18:47.658+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:47.658+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:18:47.825+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:18:47.888+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:47.888+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:18:47.916+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:18:47.915+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:18:47.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.309 seconds
+[2025-12-17T23:19:18.271+0000] {processor.py:161} INFO - Started process (PID=1067) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:19:18.273+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:19:18.278+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:18.278+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:19:18.415+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:19:18.475+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:18.474+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:19:18.504+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:18.504+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:19:18.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.282 seconds
+[2025-12-17T23:19:49.237+0000] {processor.py:161} INFO - Started process (PID=1097) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:19:49.240+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:19:49.244+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:49.244+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:19:49.398+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:19:49.455+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:49.455+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:19:49.478+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:19:49.478+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:19:49.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.279 seconds
+[2025-12-17T23:20:20.201+0000] {processor.py:161} INFO - Started process (PID=1127) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:20:20.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:20:20.215+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:20.214+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:20:20.418+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:20:20.501+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:20.501+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:20:20.535+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:20.535+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:20:20.581+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.391 seconds
+[2025-12-17T23:20:51.444+0000] {processor.py:161} INFO - Started process (PID=1157) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:20:51.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:20:51.451+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:51.450+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:20:51.585+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:20:51.644+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:51.644+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:20:51.667+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:20:51.667+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:20:51.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.262 seconds
+[2025-12-17T23:21:22.429+0000] {processor.py:161} INFO - Started process (PID=1187) to work on /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:21:22.434+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/grocery_load_dag.py for tasks to queue
+[2025-12-17T23:21:22.437+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:21:22.437+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:21:22.584+0000] {processor.py:840} INFO - DAG(s) 'grocery_load_dag' retrieved from /opt/airflow/dags/grocery_load_dag.py
+[2025-12-17T23:21:22.635+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:21:22.635+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-17T23:21:22.662+0000] {logging_mixin.py:188} INFO - [2025-12-17T23:21:22.662+0000] {dag.py:3947} INFO - Setting next_dagrun for grocery_load_dag to None, run_after=None
+[2025-12-17T23:21:22.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/grocery_load_dag.py took 0.272 seconds
