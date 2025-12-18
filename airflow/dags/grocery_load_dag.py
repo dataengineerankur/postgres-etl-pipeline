@@ -1,9 +1,8 @@
 from __future__ import annotations
 
-import json
 import os
 from datetime import datetime, timedelta
-from typing import Any, Dict
+from typing import Any, Dict, List, Optional
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
@@ -14,15 +13,18 @@ from grocery_lib.notify_ardoa import notify_failure_to_ardoa
 from grocery_lib.pg import upsert_stg_transactions
 
 
-def load_to_postgres(*, scenario: str, **context) -> Dict[str, Any]:
-    """Load enriched transaction data into Postgres.
+def _conf_run_id(context: Dict[str, Any]) -> Optional[str]:
+    """Best-effort extraction of dag_run.conf['run_id'] for diagnostics."""
+    dag_run = context.get("dag_run")
+    if dag_run is None:
+        return None
+    conf = getattr(dag_run, "conf", None)
+    if not conf:
+        return None
+    return conf.get("run_id")
 
-    This task expects the upstream *enrich* task to have written an
-    ``enriched.json`` file to the ``out`` directory for the current run.
-    If the file is missing we raise a ``FileNotFoundError`` with a clear
-    message, preserving the original failure semantics while providing
-    better diagnostics.
-    """
+
+def load_to_postgres(**context: Any) -> Dict[str, Any]:
     run_id = resolve_data_run_id(context)
     base = os.getenv("ARDOA_DATA_BASE", "/opt/airflow/data")
     paths = RunPaths(base_dir=base, run_id=run_id)
@@ -31,9 +33,32 @@ def load_to_postgres(*, scenario: str, **context) -> Dict[str, Any]:
 
     # Verify that the enriched artifact exists before attempting to read it.
     if not os.path.exists(enriched_path):
+        # Provide additional diagnostic context while preserving failure semantics.
+        raw_path = os.path.join(paths.raw_dir, "transactions.json")
+        staged_path = os.path.join(paths.staged_dir, "transactions.ndjson")
+
+        missing: List[str] = [
+            p
+            for p in (raw_path, staged_path, enriched_path)
+            if not os.path.exists(p)
+        ]
+
+        extra = ""
+        if len(missing) > 1:
+            extra += " Missing upstream artifacts: " + ", ".join(missing) + "."
+
+        conf_run_id = _conf_run_id(context)
+        if not conf_run_id:
+            extra += (
+                " This DAG run did not receive a 'run_id' in dag_run.conf."
+                " If you ran grocery_load_dag manually, pass the upstream data run_id"
+                " (from grocery_ingest_dag/grocery_enrich_dag) in the run configuration."
+            )
+
         raise FileNotFoundError(
             f"Enriched artifact not found at {enriched_path}. "
             "Upstream enrichment may have failed or the raw input was missing."
+            + extra
         )
 
     # Read the enriched payload. ``read_json`` will raise its own
@@ -41,19 +66,14 @@ def load_to_postgres(*, scenario: str, **context) -> Dict[str, Any]:
     # the read, which is acceptable – the task will still fail.
     payload = read_json(path=enriched_path)
 
-    # ``payload`` is expected to contain a top-level ``enriched`` list.
-    # Guard against unexpected schema drift while preserving failure
-    # semantics – we let any ``KeyError`` or ``TypeError`` propagate.
-    enriched_records = payload["enriched"]
+    transactions = payload.get("transactions")
+    if not isinstance(transactions, list):
+        raise RuntimeError(
+            "Invalid enriched payload: expected JSON object with key 'transactions' (array)."
+        )
 
-    # Insert records into the staging table.
-    upsert_stg_transactions(enriched_records)
-
-    return {
-        "run_id": run_id,
-        "rows_loaded": len(enriched_records),
-        "scenario": scenario,
-    }
+    upsert_stg_transactions(transactions)
+    return {"run_id": run_id, "enriched_path": enriched_path, "rows": len(transactions)}
 
 
 default_args = {
@@ -74,11 +94,8 @@ with DAG(
 ) as dag:
     scenario = "{{ dag_run.conf.get('scenario', 'ok') }}"
 
-    t_load = PythonOperator(
-        task_id="load_to_postgres",
-        python_callable=load_to_postgres,
-        op_kwargs={"scenario": scenario},
-    )
+    t_load = PythonOperator(task_id="load_to_postgres", python_callable=load_to_postgres)
+
     t_trigger_reconcile = TriggerDagRunOperator(
         task_id="trigger_reconcile",
         trigger_dag_id="grocery_reconcile_dag",
@@ -88,4 +105,5 @@ with DAG(
         },
         wait_for_completion=False,
     )
+
     t_load >> t_trigger_reconcile
