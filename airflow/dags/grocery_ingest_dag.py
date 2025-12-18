@@ -94,7 +94,7 @@ with DAG(
         trigger_dag_id="grocery_validate_dag",
         conf={
             "scenario": scenario,
-            "run_id": "{{ run_id }}",
+            "run_id": "{{ dag_run.conf.get('run_id', run_id) }}",
         },
         wait_for_completion=False,
     )
