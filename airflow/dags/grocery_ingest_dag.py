@@ -60,7 +60,6 @@ def write_raw_file(*, scenario: str, **context) -> Dict[str, Any]:
 
     return {"run_id": run_id, "raw_path": raw_path, "scenario": scenario}
 
-
 default_args = {
     "owner": "grocery",
     "retries": 2,
@@ -86,10 +85,8 @@ with DAG(
     t_trigger_validate = TriggerDagRunOperator(
         task_id="trigger_validate",
         trigger_dag_id="grocery_validate_dag",
-        conf={"scenario": scenario},
+        conf={"scenario": scenario, "run_id": "{{ dag_run.run_id }}"},
         wait_for_completion=False,
     )
 
     t_init >> t_fetch >> t_write >> t_trigger_validate
-
-
