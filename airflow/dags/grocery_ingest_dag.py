@@ -94,7 +94,8 @@ with DAG(
         trigger_dag_id="grocery_validate_dag",
         conf={
             "scenario": scenario,
-            "run_id": "{{ run_id }}",
+            # Use the same data run_id that init_dirs created to avoid directory mismatches.
+            "run_id": "{{ ti.xcom_pull(task_ids='init_dirs')['run_id'] }}",
         },
         wait_for_completion=False,
     )
