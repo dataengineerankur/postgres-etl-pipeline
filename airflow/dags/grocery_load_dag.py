@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import logging
 from datetime import datetime, timedelta
 from typing import Any, Dict
 
@@ -12,6 +13,8 @@ from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from grocery_lib.io_utils import RunPaths, read_json
 from grocery_lib.notify_ardoa import notify_failure_to_ardoa
 from grocery_lib.pg import upsert_stg_transactions
+
+logger = logging.getLogger(__name__)
 
 
 def load_to_postgres(*, scenario: str, **context) -> Dict[str, Any]:
@@ -31,6 +34,13 @@ def load_to_postgres(*, scenario: str, **context) -> Dict[str, Any]:
 
     # Verify that the enriched artifact exists before attempting to read it.
     if not os.path.exists(enriched_path):
+        # Log directory contents to aid debugging of missing upstream artifacts.
+        try:
+            logger.error("Enriched artifact missing at %s. Directory listing of %s:", enriched_path, paths.out_dir)
+            for entry in os.listdir(paths.out_dir):
+                logger.error(" - %s", entry)
+        except Exception as e:
+            logger.error("Failed to list directory %s: %s", paths.out_dir, e)
         raise FileNotFoundError(
             f"Enriched artifact not found at {enriched_path}. "
             "Upstream enrichment may have failed or the raw input was missing."
