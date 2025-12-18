@@ -4,7 +4,35 @@ import json
 import os
 import time
 from dataclasses import dataclass
-from typing import Any, Dict
+from typing import Any, Dict, Mapping
+
+
+def resolve_data_run_id(context: Mapping[str, Any]) -> str:
+    """Resolve the filesystem run id used for artifact paths.
+
+    In triggered/chained DAGs, the producer should pass a stable identifier via
+    ``dag_run.conf['run_id']`` so downstream DAGs read/write artifacts in the same
+    run directory. If not present, fall back to Airflow's current ``run_id``.
+
+    Raises KeyError if no run id can be resolved.
+    """
+    dag_run = context.get("dag_run")
+    if dag_run is not None:
+        conf = getattr(dag_run, "conf", None) or {}
+        if isinstance(conf, dict):
+            conf_run_id = conf.get("run_id")
+            if conf_run_id:
+                return str(conf_run_id)
+
+        dr_run_id = getattr(dag_run, "run_id", None)
+        if dr_run_id:
+            return str(dr_run_id)
+
+    ctx_run_id = context.get("run_id")
+    if ctx_run_id:
+        return str(ctx_run_id)
+
+    raise KeyError("Unable to resolve data run id from Airflow context")
 
 
 @dataclass(frozen=True)
@@ -70,5 +98,3 @@ def read_json(*, path: str) -> Dict[str, Any]:
         raise FileNotFoundError(f"File not found: {path}. Ensure the upstream task produced this artifact.")
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
-
-
