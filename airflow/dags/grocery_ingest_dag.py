@@ -11,12 +11,18 @@ from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from grocery_lib.failure import failure_plan
-from grocery_lib.io_utils import RunPaths, ensure_dirs, intentionally_non_atomic_write_text, atomic_write_text
+from grocery_lib.io_utils import (
+    RunPaths,
+    atomic_write_text,
+    ensure_dirs,
+    intentionally_non_atomic_write_text,
+    resolve_data_run_id,
+)
 from grocery_lib.notify_ardoa import notify_failure_to_ardoa
 
 
 def _run_id(context) -> str:
-    return context["run_id"]
+    return resolve_data_run_id(context)
 
 
 def init_dirs(**context) -> Dict[str, Any]:
@@ -86,10 +92,11 @@ with DAG(
     t_trigger_validate = TriggerDagRunOperator(
         task_id="trigger_validate",
         trigger_dag_id="grocery_validate_dag",
-        conf={"scenario": scenario},
+        conf={
+            "scenario": scenario,
+            "run_id": "{{ run_id }}",
+        },
         wait_for_completion=False,
     )
 
     t_init >> t_fetch >> t_write >> t_trigger_validate
-
-

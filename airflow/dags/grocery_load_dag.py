@@ -9,7 +9,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
-from grocery_lib.io_utils import RunPaths, read_json
+from grocery_lib.io_utils import RunPaths, read_json, resolve_data_run_id
 from grocery_lib.notify_ardoa import notify_failure_to_ardoa
 from grocery_lib.pg import upsert_stg_transactions
 
@@ -23,7 +23,7 @@ def load_to_postgres(*, scenario: str, **context) -> Dict[str, Any]:
     message, preserving the original failure semantics while providing
     better diagnostics.
     """
-    run_id = context["run_id"]
+    run_id = resolve_data_run_id(context)
     base = os.getenv("ARDOA_DATA_BASE", "/opt/airflow/data")
     paths = RunPaths(base_dir=base, run_id=run_id)
 
@@ -41,7 +41,7 @@ def load_to_postgres(*, scenario: str, **context) -> Dict[str, Any]:
     # the read, which is acceptable – the task will still fail.
     payload = read_json(path=enriched_path)
 
-    # ``payload`` is expected to contain a top‑level ``enriched`` list.
+    # ``payload`` is expected to contain a top-level ``enriched`` list.
     # Guard against unexpected schema drift while preserving failure
     # semantics – we let any ``KeyError`` or ``TypeError`` propagate.
     enriched_records = payload["enriched"]
@@ -82,7 +82,10 @@ with DAG(
     t_trigger_reconcile = TriggerDagRunOperator(
         task_id="trigger_reconcile",
         trigger_dag_id="grocery_reconcile_dag",
-        conf={"scenario": scenario},
+        conf={
+            "scenario": scenario,
+            "run_id": "{{ dag_run.conf.get('run_id', run_id) }}",
+        },
         wait_for_completion=False,
     )
     t_load >> t_trigger_reconcile
