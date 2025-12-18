@@ -42,7 +42,17 @@ _TXN_SCHEMA: Dict[str, Any] = {
 
 
 def validate_contract(*, scenario: str, **context) -> Dict[str, Any]:
-    run_id = context["run_id"]
+    # Extract run_id from the DagRun context; fallback to direct key if present.
+    dag_run = context.get("dag_run")
+    if dag_run:
+        # dag_run.conf may be a dict or an object with attribute 'conf'
+        conf = getattr(dag_run, "conf", {}) or {}
+        run_id = conf.get("run_id") or getattr(dag_run, "run_id", None)
+    else:
+        run_id = context.get("run_id")
+    if not run_id:
+        raise RuntimeError("run_id not found in task context")
+
     base = os.getenv("ARDOA_DATA_BASE", "/opt/airflow/data")
     paths = RunPaths(base_dir=base, run_id=run_id)
     ensure_dirs(paths)
@@ -108,5 +118,3 @@ with DAG(
     )
 
     t_validate >> t_stage >> t_trigger_enrich
-
-
