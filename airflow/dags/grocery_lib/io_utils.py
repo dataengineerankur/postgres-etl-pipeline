@@ -62,6 +62,12 @@ def intentionally_non_atomic_write_text(*, path: str, text: str, pause_s: float 
 
 
 def read_json(*, path: str) -> Dict[str, Any]:
+    """Read a JSON file and return its contents.
+
+    Raises a FileNotFoundError with a clear message if the file does not exist.
+    """
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"File not found: {path}. Ensure the upstream task produced this artifact.")
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
