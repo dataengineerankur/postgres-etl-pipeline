@@ -22,6 +22,9 @@ def enrich_transactions(*, scenario: str, **context) -> Dict[str, Any]:
     raw_path = os.path.join(paths.raw_dir, "transactions.json")
     out_path = os.path.join(paths.out_dir, "enriched.json")
 
+    # Ensure the output directory exists before writing
+    ensure_dirs(paths.out_dir)
+
     payload = read_json(path=raw_path)
     txns: List[Dict[str, Any]] = payload["transactions"]
 
@@ -68,5 +71,4 @@ with DAG(
         wait_for_completion=False,
     )
     t_enrich >> t_trigger_load
-
 
