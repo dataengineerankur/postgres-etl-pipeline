@@ -10,7 +10,7 @@ from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from jsonschema import Draft202012Validator
 
-from grocery_lib.io_utils import RunPaths, ensure_dirs, read_json
+from grocery_lib.io_utils import RunPaths, ensure_dirs, read_json, resolve_data_run_id
 from grocery_lib.notify_ardoa import notify_failure_to_ardoa
 
 
@@ -42,7 +42,7 @@ _TXN_SCHEMA: Dict[str, Any] = {
 
 
 def validate_contract(*, scenario: str, **context) -> Dict[str, Any]:
-    run_id = context["run_id"]
+    run_id = resolve_data_run_id(context)
     base = os.getenv("ARDOA_DATA_BASE", "/opt/airflow/data")
     paths = RunPaths(base_dir=base, run_id=run_id)
     ensure_dirs(paths)
@@ -63,7 +63,7 @@ def validate_contract(*, scenario: str, **context) -> Dict[str, Any]:
 
 
 def stage_ndjson(**context) -> Dict[str, Any]:
-    run_id = context["run_id"]
+    run_id = resolve_data_run_id(context)
     base = os.getenv("ARDOA_DATA_BASE", "/opt/airflow/data")
     paths = RunPaths(base_dir=base, run_id=run_id)
     raw_path = os.path.join(paths.raw_dir, "transactions.json")
@@ -103,10 +103,11 @@ with DAG(
     t_trigger_enrich = TriggerDagRunOperator(
         task_id="trigger_enrich",
         trigger_dag_id="grocery_enrich_dag",
-        conf={"scenario": scenario},
+        conf={
+            "scenario": scenario,
+            "run_id": "{{ dag_run.conf.get('run_id', run_id) }}",
+        },
         wait_for_completion=False,
     )
 
     t_validate >> t_stage >> t_trigger_enrich
-
-
