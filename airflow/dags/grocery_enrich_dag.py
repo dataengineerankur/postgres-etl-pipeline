@@ -68,7 +68,6 @@ with DAG(
         task_id="trigger_load",
         trigger_dag_id="grocery_load_dag",
         conf={"scenario": scenario},
-        wait_for_completion=False,
+        wait_for_completion=True,
     )
     t_enrich >> t_trigger_load
-
