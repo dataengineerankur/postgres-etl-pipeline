@@ -12,6 +12,14 @@ from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from grocery_lib.io_utils import RunPaths, ensure_dirs, read_json, atomic_write_text
 from grocery_lib.notify_ardoa import notify_failure_to_ardoa
 
+# ----------------------------------------------------------------------
+# Custom exception to make missing upstream artifacts explicit.
+# Inherits from FileNotFoundError so existing monitoring that checks
+# for this exception type continues to work.
+class MissingUpstreamArtifactError(FileNotFoundError):
+    """Raised when a required upstream artifact is absent."""
+    pass
+
 
 def enrich_transactions(*, scenario: str, **context) -> Dict[str, Any]:
     run_id = context["run_id"]
@@ -21,6 +29,13 @@ def enrich_transactions(*, scenario: str, **context) -> Dict[str, Any]:
 
     raw_path = os.path.join(paths.raw_dir, "transactions.json")
     out_path = os.path.join(paths.out_dir, "enriched.json")
+
+    # Guard against missing upstream raw file.
+    if not os.path.isfile(raw_path):
+        raise MissingUpstreamArtifactError(
+            f"Up‑stream artifact not found: {raw_path}. "
+            "The ingest DAG must run successfully before enrichment."
+        )
 
     payload = read_json(path=raw_path)
     txns: List[Dict[str, Any]] = payload["transactions"]
@@ -68,5 +83,3 @@ with DAG(
         wait_for_completion=False,
     )
     t_enrich >> t_trigger_load
-
-
