@@ -21,11 +21,15 @@ def _conf_run_id(context: Dict[str, Any]) -> Optional[str]:
     conf = getattr(dag_run, "conf", None)
     if not conf:
         return None
-    return conf.get("run_id")
+    run_id = conf.get("run_id")
+    if isinstance(run_id, str) and run_id.strip() == "":
+        return None
+    return run_id
 
 
 def load_to_postgres(**context: Any) -> Dict[str, Any]:
-    run_id = resolve_data_run_id(context)
+    conf_run_id = _conf_run_id(context)
+    run_id = conf_run_id or resolve_data_run_id(context)
     base = os.getenv("ARDOA_DATA_BASE", "/opt/airflow/data")
     paths = RunPaths(base_dir=base, run_id=run_id)
 
@@ -47,7 +51,6 @@ def load_to_postgres(**context: Any) -> Dict[str, Any]:
         if len(missing) > 1:
             extra += " Missing upstream artifacts: " + ", ".join(missing) + "."
 
-        conf_run_id = _conf_run_id(context)
         if not conf_run_id:
             extra += (
                 " This DAG run did not receive a 'run_id' in dag_run.conf."
@@ -101,7 +104,7 @@ with DAG(
         trigger_dag_id="grocery_reconcile_dag",
         conf={
             "scenario": scenario,
-            "run_id": "{{ dag_run.conf.get('run_id', run_id) }}",
+            "run_id": "{{ (ti.xcom_pull(task_ids='load_to_postgres') or {}).get('run_id') or dag_run.conf.get('run_id') }}",
         },
         wait_for_completion=False,
     )
