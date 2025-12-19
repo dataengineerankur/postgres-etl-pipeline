@@ -8,7 +8,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
-from grocery_lib.io_utils import RunPaths, read_json, resolve_data_run_id
+from grocery_lib.io_utils import RunPaths, read_json
 from grocery_lib.notify_ardoa import notify_failure_to_ardoa
 from grocery_lib.pg import upsert_stg_transactions
 
@@ -25,7 +25,21 @@ def _conf_run_id(context: Dict[str, Any]) -> Optional[str]:
 
 
 def load_to_postgres(**context: Any) -> Dict[str, Any]:
-    run_id = resolve_data_run_id(context)
+    # This DAG loads artifacts produced by upstream DAGs and therefore requires
+    # the upstream *data* run_id to be provided via dag_run.conf.
+    conf_run_id = _conf_run_id(context)
+    if not conf_run_id:
+        airflow_run_id = context.get("run_id")
+        raise FileNotFoundError(
+            "Missing required upstream data 'run_id' in dag_run.conf for grocery_load_dag. "
+            "This DAG does not generate raw/staged/enriched artifacts itself; it loads outputs "
+            "from grocery_ingest_dag/grocery_validate_dag/grocery_enrich_dag. "
+            "If you ran grocery_load_dag manually, pass the upstream data run_id in the run configuration "
+            "(e.g., {\"run_id\": \"<upstream_run_id>\"})."
+            + (f" Current Airflow run_id was {airflow_run_id}." if airflow_run_id else "")
+        )
+
+    run_id = conf_run_id
     base = os.getenv("ARDOA_DATA_BASE", "/opt/airflow/data")
     paths = RunPaths(base_dir=base, run_id=run_id)
 
@@ -46,14 +60,6 @@ def load_to_postgres(**context: Any) -> Dict[str, Any]:
         extra = ""
         if len(missing) > 1:
             extra += " Missing upstream artifacts: " + ", ".join(missing) + "."
-
-        conf_run_id = _conf_run_id(context)
-        if not conf_run_id:
-            extra += (
-                " This DAG run did not receive a 'run_id' in dag_run.conf."
-                " If you ran grocery_load_dag manually, pass the upstream data run_id"
-                " (from grocery_ingest_dag/grocery_enrich_dag) in the run configuration."
-            )
 
         raise FileNotFoundError(
             f"Enriched artifact not found at {enriched_path}. "
@@ -101,7 +107,7 @@ with DAG(
         trigger_dag_id="grocery_reconcile_dag",
         conf={
             "scenario": scenario,
-            "run_id": "{{ dag_run.conf.get('run_id', run_id) }}",
+            "run_id": "{{ dag_run.conf.get('run_id') }}",
         },
         wait_for_completion=False,
     )
