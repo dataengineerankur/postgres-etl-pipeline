@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: retail_src
+    schema: retail_src
+    tables:
+      - name: transactions_src
+        description: "Source transactions loaded by Airflow."
+
+

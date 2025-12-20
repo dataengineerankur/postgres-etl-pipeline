@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: mart_daily_sales
+    description: "Daily aggregated sales by store."
+    columns:
+      - name: day
+        tests:
+          - not_null
+      - name: store_id
+        tests:
+          - not_null
+      - name: txns
+        tests:
+          - not_null
+      - name: gross_amount_cents
+        tests:
+          - not_null
+      - name: units
+        tests:
+          - not_null
+
+
