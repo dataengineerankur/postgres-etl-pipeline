@@ -26,7 +26,8 @@ typed as (
     cast(sku as text) as sku,
     -- model_bug scenario: reference a wrong column name to simulate a regression
     {% if sc == 'model_bug' %}
-    cast(amount_cent as integer) as amount_cents,
+    -- Fixed: use the correct column name "amount_cents" instead of the non‑existent "amount_cent".
+    cast(amount_cents as integer) as amount_cents,
     {% elif sc == 'logic_bug' %}
     -- logic_bug: unsafe division by zero (should be guarded with nullif or similar)
     cast(amount_cents as integer) / 0 as amount_cents,
@@ -34,7 +35,7 @@ typed as (
     -- syntax_bug: missing comma below is intentional (SQL syntax error)
     cast(amount_cents as integer) as amount_cents
     {% else %}
-    -- bad_data scenario inserts strings; casting can fail (real-world data issue)
+    -- bad_data scenario inserts strings; casting can fail (real‑world data issue)
     cast(amount_cents as integer) as amount_cents,
     {% endif %}
     cast(quantity as integer) as quantity,
@@ -44,5 +45,3 @@ typed as (
 
 select *
 from typed
-
-
