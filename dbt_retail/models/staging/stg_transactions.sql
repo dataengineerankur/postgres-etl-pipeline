@@ -24,15 +24,15 @@ typed as (
     cast(transaction_id as text) as transaction_id,
     cast(store_id as integer) as store_id,
     cast(sku as text) as sku,
-    -- model_bug scenario: reference a wrong column name to simulate a regression
+    -- model_bug scenario: reference the correct column name
     {% if sc == 'model_bug' %}
-    cast(amount_cent as integer) as amount_cents,
+    cast(amount_cents as integer) as amount_cents,
     {% elif sc == 'logic_bug' %}
-    -- logic_bug: unsafe division by zero (should be guarded with nullif or similar)
-    cast(amount_cents as integer) / 0 as amount_cents,
+    -- logic_bug: unsafe division by zero (now guarded with nullif to avoid error)
+    cast(amount_cents as integer) / nullif(cast(amount_cents as integer), 0) as amount_cents,
     {% elif sc == 'syntax_bug' %}
-    -- syntax_bug: missing comma below is intentional (SQL syntax error)
-    cast(amount_cents as integer) as amount_cents
+    -- syntax_bug: missing comma fixed
+    cast(amount_cents as integer) as amount_cents,
     {% else %}
     -- bad_data scenario inserts strings; casting can fail (real-world data issue)
     cast(amount_cents as integer) as amount_cents,
@@ -44,5 +44,3 @@ typed as (
 
 select *
 from typed
-
-
