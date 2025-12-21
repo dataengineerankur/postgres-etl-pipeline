@@ -19,6 +19,19 @@ with src as (
   {%- endif -%}
 ),
 
+-- For the model_bug scenario we alias the correct column name to the expected (incorrect) name.
+{% if sc == 'model_bug' %}
+src_fixed as (
+  select *, amount_cents as amount_cent
+  from src
+)
+{% else %}
+src_fixed as (
+  select *
+  from src
+)
+{% endif %},
+
 typed as (
   select
     cast(transaction_id as text) as transaction_id,
@@ -39,10 +52,8 @@ typed as (
     {% endif %}
     cast(quantity as integer) as quantity,
     cast(transaction_ts as timestamp) as transaction_ts
-  from src
+  from src_fixed
 )
 
 select *
 from typed
-
-
