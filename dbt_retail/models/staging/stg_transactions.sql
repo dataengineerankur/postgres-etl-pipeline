@@ -10,7 +10,7 @@
 {%- set sc = var('scenario','ok') -%}
 
 with src as (
-  select *
+  select *, amount_cents as amount_cent
   from
   {%- if sc == 'source_bug' -%}
     {{ source('retail_src', 'transactions_src_typo') }}
@@ -44,5 +44,3 @@ typed as (
 
 select *
 from typed
-
-
