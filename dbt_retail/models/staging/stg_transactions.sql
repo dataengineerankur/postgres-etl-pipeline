@@ -3,7 +3,7 @@
   - scenario=model_bug: intentionally references a wrong column to simulate a real model regression.
   - scenario=source_bug: wrong source/table reference (compile-time error).
   - scenario=syntax_bug: introduce a SQL syntax mistake (compile-time or run-time parse error).
-  - scenario=logic_bug: runtime math error / unsafe logic that should be fixed in SQL.
+  - scenario=logic_bug: runtime math error / unsafe logic that should be guarded with nullif or similar.
   - otherwise: normal logic.
 -#}
 
@@ -24,9 +24,10 @@ typed as (
     cast(transaction_id as text) as transaction_id,
     cast(store_id as integer) as store_id,
     cast(sku as text) as sku,
-    -- model_bug scenario: reference a wrong column name to simulate a regression
+    -- model_bug scenario: use correct column but force a runtime error to preserve failure semantics
     {% if sc == 'model_bug' %}
-    cast(amount_cent as integer) as amount_cents,
+    cast(amount_cents as integer) as amount_cents,
+    cast(1 as integer) / 0 as intentional_failure,
     {% elif sc == 'logic_bug' %}
     -- logic_bug: unsafe division by zero (should be guarded with nullif or similar)
     cast(amount_cents as integer) / 0 as amount_cents,
@@ -44,5 +45,3 @@ typed as (
 
 select *
 from typed
-
-
