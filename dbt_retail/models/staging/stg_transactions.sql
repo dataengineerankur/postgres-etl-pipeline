@@ -24,9 +24,9 @@ typed as (
     cast(transaction_id as text) as transaction_id,
     cast(store_id as integer) as store_id,
     cast(sku as text) as sku,
-    -- model_bug scenario: reference a wrong column name to simulate a regression
+    -- model_bug scenario: raise an explicit error instead of referencing a missing column
     {% if sc == 'model_bug' %}
-    cast(amount_cent as integer) as amount_cents,
+    {{ exceptions.raise_compiler_error('Intentional model bug: simulated failure for scenario "model_bug"') }}
     {% elif sc == 'logic_bug' %}
     -- logic_bug: unsafe division by zero (should be guarded with nullif or similar)
     cast(amount_cents as integer) / 0 as amount_cents,
@@ -34,7 +34,7 @@ typed as (
     -- syntax_bug: missing comma below is intentional (SQL syntax error)
     cast(amount_cents as integer) as amount_cents
     {% else %}
-    -- bad_data scenario inserts strings; casting can fail (real-world data issue)
+    -- normal operation (or bad_data scenario inserts strings; casting can fail)
     cast(amount_cents as integer) as amount_cents,
     {% endif %}
     cast(quantity as integer) as quantity,
@@ -44,5 +44,3 @@ typed as (
 
 select *
 from typed
-
-
