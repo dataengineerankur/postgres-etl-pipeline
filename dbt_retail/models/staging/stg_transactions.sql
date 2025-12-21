@@ -24,9 +24,9 @@ typed as (
     cast(transaction_id as text) as transaction_id,
     cast(store_id as integer) as store_id,
     cast(sku as text) as sku,
-    -- model_bug scenario: reference a wrong column name to simulate a regression
+    -- model_bug scenario: intentionally fail compilation to preserve failure semantics
     {% if sc == 'model_bug' %}
-    cast(amount_cent as integer) as amount_cents,
+    {{ exceptions.raise_compiler_error('model_bug scenario intentionally fails') }}
     {% elif sc == 'logic_bug' %}
     -- logic_bug: unsafe division by zero (should be guarded with nullif or similar)
     cast(amount_cents as integer) / 0 as amount_cents,
@@ -44,5 +44,3 @@ typed as (
 
 select *
 from typed
-
-
