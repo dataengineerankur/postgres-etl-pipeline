@@ -26,7 +26,8 @@ typed as (
     cast(sku as text) as sku,
     -- model_bug scenario: reference a wrong column name to simulate a regression
     {% if sc == 'model_bug' %}
-    cast(amount_cent as integer) as amount_cents,
+    -- Fixed column reference: use correct column name amount_cents
+    cast(amount_cents as integer) as amount_cents,
     {% elif sc == 'logic_bug' %}
     -- logic_bug: unsafe division by zero (should be guarded with nullif or similar)
     cast(amount_cents as integer) / 0 as amount_cents,
@@ -44,5 +45,4 @@ typed as (
 
 select *
 from typed
-
 
