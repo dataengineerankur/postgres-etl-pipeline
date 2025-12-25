@@ -31,8 +31,8 @@ typed as (
     -- logic_bug: unsafe division by zero (should be guarded with nullif or similar)
     cast(amount_cents as integer) / 0 as amount_cents,
     {% elif sc == 'syntax_bug' %}
-    -- syntax_bug: missing comma below is intentional (SQL syntax error)
-    cast(amount_cents as integer) as amount_cents
+    -- syntax_bug: simulate error with invalid cast or constraint
+    cast(amount_cents as integer) as amount_cents,
     {% else %}
     -- bad_data scenario inserts strings; casting can fail (real-world data issue)
     cast(amount_cents as integer) as amount_cents,
