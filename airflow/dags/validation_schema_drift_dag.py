@@ -49,8 +49,9 @@ def producer_write(**context: Any) -> str:
 
 def consumer_transform(**context: Any) -> str:
     """
-    Consumer expects schema_version=1.
-    Under drift, this fails deterministically and points to the producer boundary.
+    Consumer validates the schema version and fields based on the scenario.
+    For schema_drift_v2: expects v2 contract with amount_cents field.
+    Otherwise: expects v1 contract with amount field.
     """
     run_id = context["dag_run"].run_id
     scenario = context["ti"].xcom_pull(task_ids="choose_scenario")
@@ -60,13 +61,21 @@ def consumer_transform(**context: Any) -> str:
         data = json.load(f)
 
     ver = int(data.get("schema_version", 0))
-    if scenario == "schema_drift_v2" and ver != 1:
-        raise ValueError(f"Data contract failure: expected schema_version=1 but got {ver}")
-
-    # v1 contract
     rows = data.get("rows") or []
-    if not rows or "amount" not in rows[0]:
-        raise ValueError("Data contract failure: expected rows[0].amount for schema_version=1")
+    
+    if scenario == "schema_drift_v2":
+        # v2 contract: expect schema_version=2 with amount_cents field
+        if ver != 2:
+            raise ValueError(f"Data contract failure: expected schema_version=2 but got {ver}")
+        if not rows or "amount_cents" not in rows[0]:
+            raise ValueError("Data contract failure: expected rows[0].amount_cents for schema_version=2")
+    else:
+        # v1 contract: expect schema_version=1 with amount field
+        if ver != 1:
+            raise ValueError(f"Data contract failure: expected schema_version=1 but got {ver}")
+        if not rows or "amount" not in rows[0]:
+            raise ValueError("Data contract failure: expected rows[0].amount for schema_version=1")
+    
     return "ok"
 
 
